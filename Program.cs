@@ -55,7 +55,7 @@ builder.Services.AddAuthentication("Bearer")
             ValidAudience = jwtSettings.Audience
         };
 
-        options.RequireHttpsMetadata = true;
+        options.RequireHttpsMetadata = false;
     });
 
 builder.Services.AddDbContext<AppDbContext>(options => 

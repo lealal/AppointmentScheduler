@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AppointmentScheduler.Controllers
 {
     [ApiController]
+    [AllowAnonymous]
     [Route("api/test")]
     public class TestController : ControllerBase
     {
